@@ -1,0 +1,180 @@
+.fwrap {
+  padding: 52px 0px 100px 0px;
+  flex-wrap: nowrap;
+  display: flex;
+  column-gap: 24px;
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+    padding: 50px 0px 82px 0px;
+  }
+  .fcontent {
+    width: 45%;
+    .logo {
+      max-width: 73px;
+    }
+    .logos {
+      display: flex;
+      column-gap: 10px;
+      // justify-content: center;
+      // @media (max-width: 992px) {
+      //   justify-content: center;
+      // }
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+      text-align: center;
+      .logo {
+        max-width: 174px;
+      }
+      p {
+        display: none;
+      }
+      .logos {
+        margin-top: 35px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .menu {
+    width: 35%;
+    h6 {
+      // font-family: "Inter";
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 36px;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    a {
+      // font-family: "Inter";
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
+      .pages {
+        margin: auto;
+        margin-bottom: 14px;
+        text-align: center;
+        width: auto;
+      }
+    }
+  }
+  .fsignup {
+    width: 20%;
+    h6 {
+      // font-family: "Inter";
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 36px;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    @media (max-width: 992px) {
+      margin-top: 15px;
+      width: 100%;
+      text-align: left;
+      .inputWrap {
+        display: flex;
+        align-items: center;
+        position: relative;
+        input {
+          width: 100%;
+          max-width: 100%;
+          border-radius: 30px;
+          padding-right: 150px;
+          outline: 0px !important;
+        }
+        button {
+          margin-top: 0px;
+          right: 0;
+          height: 39px;
+          border-radius: 30px;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+.inputst {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 23px;
+  gap: 10px;
+  width: 100%;
+  max-width: 270px;
+  height: 39px;
+  background: #e2e2e2;
+  box-shadow: 6px 6px 12px rgba(41, 41, 41, 0.09);
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+}
+
+.subscribebtnst {
+  gap: 10px;
+  width: 132px;
+  color: white;
+  margin-top: 20px;
+  height: 42px;
+  background: #5fbb46;
+  border: none;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #4f489e;
+}
+.pages {
+  height: 19px;
+
+  // font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+.copyRight {
+  background-color: #5fbb46;
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 8px;
+  // font-family: "Inter";
+  text-align: center;
+  @media (max-width: 992px) {
+    padding: 18px;
+  }
+}
+:global {
+  button.accordion-button {
+    padding: 0px;
+    background: unset !important;
+    border: 0px !important;
+    box-shadow: none !important;
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .accordion-body {
+    padding: 0px;
+  }
+  @media (min-width: 992px) {
+    .accordion .collapse:not(.show) {
+      display: block !important;
+    }
+    .accordion-collapse {
+      display: block !important;
+      transition: unset !important;
+      opacity: 1 !important;
+    }
+  }
+}

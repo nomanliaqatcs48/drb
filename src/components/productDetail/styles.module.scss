@@ -1,0 +1,95 @@
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .category{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 16px;
+    padding-top: 2px;
+    padding-bottom: 14px;
+    color: rgb(174, 180, 190);
+    font-weight: 600;
+    text-transform: none;
+    white-space: normal;
+  }
+  .price {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #4f489e;
+    text-transform: none;
+    white-space: normal;
+  }
+
+  .description{
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-size: 14px;
+    text-transform: none;
+    white-space: normal;
+  }
+
+
+  .modal_wrap {
+    :global {
+      .modal-dialog {
+        max-width: 800px;
+        width: 100%;
+        // box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 15px -7px, rgba(0, 0, 0, 0.14) 0px 24px 38px 3px, rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+        .modal-content {
+          border: 1px solid #c9daff;
+          border-radius: 8px;
+        }
+      }
+    }
+    .cross {
+      cursor: pointer;
+      background-color: #ebf0ff;
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .toogleBtn {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    border: 4px solid #0000;
+    color: #555151;
+    background-color: #e4e5ec;
+  }
+  .inputQty {
+    border: none;
+    width: 55px;
+    text-align: center;
+    outline: none;
+  }
+  .heading {
+    margin-top: 5px;
+  }
+
+  .tabLabel {
+    font-size: 17px;
+  }
+
+  .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,41 @@
+.modal_wrap {
+  :global {
+    .modal-dialog {
+      max-width: 700px;
+      width: 100%;
+      .modal-content {
+        border: 1px solid #c9daff;
+        border-radius: 8px;
+      }
+    }
+  }
+  .cross {
+    cursor: pointer;
+    background-color: #ebf0ff;
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.textVerticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 27vh;
+  flex-direction: column;
+  .text {
+    color: #757575;
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 27px;
+  }
+}
+
+

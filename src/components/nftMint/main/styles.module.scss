@@ -1,0 +1,143 @@
+.wrapper {
+  .lts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (max-width: 992px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 100%;
+    }
+    .contact_form {
+      display: flex;
+      flex-direction: column;
+      max-width: 470px;
+      @media (max-width: 1200px) {
+        max-width: 370px;
+      }
+      @media (max-width: 992px) {
+        max-width: 100%;
+      }
+      .heading {
+        // font-family: "Bakbak One";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 50px;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        @media (max-width: 992px) {
+          margin-bottom: 20px;
+          font-size: 32px;
+        }
+      }
+      input {
+        border: 1px solid #d4cdcd;
+        background: rgba(251, 252, 253, 0.94);
+        border: 1px solid #d4cdcd;
+        border-radius: 10px;
+        // font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 12px 20px;
+        margin-bottom: 24px;
+        outline: none !important;
+      }
+
+      button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 40px;
+        gap: 10px;
+        max-width: 158px;
+        width: 100%;
+        height: 56px;
+        background: #5fbb46;
+        border-radius: 28px;
+        // font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: white;
+        border: 0px;
+      }
+    }
+  }
+}
+
+.modal_wrap {
+  :global {
+    .modal-dialog {
+      max-width: 550px;
+      width: 100%;
+
+      .modal-content {
+        border: 1px solid #c9daff;
+        border-radius: 24px;
+        padding: 16px 8px;
+      }
+    }
+  }
+  .cross {
+    cursor: pointer;
+    background-color: #ebf0ff;
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    font-weight: 500;
+    font-size: 16px;
+    color: #545454;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .lable {
+    font-weight: 600 !important;
+  }
+}
+
+.addBtn {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 12px;
+  justify-content: center;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  padding: 18px;
+  font-size: 28px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(18, 18, 18, 0.12);
+}
+
+.upload {
+  height: 260px;
+  width: 350px;
+  border: 3px dashed rgb(204, 204, 204);
+  text-align: center;
+  font-size: 28px;
+  vertical-align: middle;
+  display: table-cell;
+  cursor: pointer;
+}
+
+.upload:hover {
+  background: #666666;
+  color: #fff
+}

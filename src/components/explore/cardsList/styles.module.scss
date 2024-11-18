@@ -1,0 +1,197 @@
+.wrapper {
+  padding: 100px 0px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url("../../../assets/explore-art.svg");
+
+    bottom: 0;
+    z-index: -1;
+    height: 60px;
+    width: 338px;
+    object-fit: contain;
+    object-position: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 50px 0px;
+  }
+  .heading_wrap {
+    .heading {
+      // font-family: "Bakbak One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 56px;
+      text-transform: uppercase;
+      color: #333333;
+      @media only screen and (max-width: 992px) {
+        font-size: 32px;
+        line-height: 46px;
+      }
+    }
+    .text {
+      // font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #333333;
+      margin-top: 6px;
+    }
+  }
+  .list_wrap {
+    .title {
+      position: relative;
+      margin-top: 34px;
+      // font-family: "Bakbak One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 56px;
+      text-transform: uppercase;
+      color: #333333;
+      @media only screen and (max-width: 992px) {
+        font-size: 28px;
+        margin-top: 20px;
+      }
+      &.feature {
+        &:before {
+          content: "";
+          position: absolute;
+          background-image: url("../../../assets/feature-art.svg");
+          top: -30px;
+          height: 107px;
+          width: 107px;
+          object-fit: contain;
+          object-position: center;
+          z-index: -1;
+          left: -65px;
+          @media only screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+      }
+      &.trending {
+        &:before {
+          content: "";
+          position: absolute;
+          background-image: url("../../../assets/trending-design.svg");
+          top: -35px;
+          height: 135px;
+          width: 112px;
+          object-fit: contain;
+          object-position: center;
+          z-index: -1;
+          left: -65px;
+          @media only screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+      }
+      &.invite {
+        &:before {
+          content: "";
+          position: absolute;
+          background-image: url("../../../assets/invite-art.svg");
+          top: -35px;
+          height: 112px;
+          width: 73px;
+          object-fit: contain;
+          object-position: center;
+          z-index: -1;
+          left: -65px;
+          @media only screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .card_list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 30px;
+      @media only screen and (max-width: 992px) {
+        gap: 14px;
+        margin-top: 20px;
+      }
+      .btn_wrap {
+        width: 100%;
+        text-align: center;
+        .more {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 12px 24px;
+          gap: 8px;
+          max-width: 228px;
+          width: 100%;
+          height: 48px;
+          background: #5fbb46;
+          border-radius: 30px;
+          // font-family: "Bakbak One";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #ffffff;
+          border: 0px;
+          margin-top: 20px;
+          @media only screen and (max-width: 767px) {
+            margin: auto;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .cards {
+    }
+  }
+  .next {
+    background-color: #5fbb46;
+    border: 1px solid #5fbb46;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    svg path {
+      fill: white;
+    }
+    &:hover {
+      background-color: #4f489e;
+      border: 1px solid #4f489e;
+    }
+  }
+  .prev {
+    background-color: #5fbb46;
+    border: 1px solid #5fbb46;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    svg path {
+      fill: white;
+    }
+    &:hover {
+      background-color: #4f489e;
+      border: 1px solid #4f489e;
+    }
+  }
+}

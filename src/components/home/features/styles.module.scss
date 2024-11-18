@@ -1,0 +1,173 @@
+.sec_wrap {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #4d499e;
+  padding: 70px 0px 50px;
+  .heading {
+    // font-family: "Bakbak One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 23px;
+    @media only screen and (max-width: 992px) {
+      font-size: 32px;
+    }
+  }
+
+  .grid_wrap {
+    // display: flex;
+    // flex-wrap: wrap;
+    .grid_item {
+      align-items: center;
+      display: flex !important;
+      width: unset !important;
+      align-items: center;
+      justify-content: center;
+      column-gap: 30px;
+      padding: 48px 10px;
+      img {
+        max-width: 56px;
+      }
+      // @media only screen and (max-width: 992px) {
+      //   width: 100%;
+      //   flex-basis: 100%;
+      //   max-width: 100%;
+      //   border: 0px !important;
+      //   height: auto;
+
+      //   position: relative;
+      //   br {
+      //     display: none;
+      //   }
+      // }
+      // &:nth-child(1) {
+      //   width: 33.33%;
+      //   border-bottom: 1px solid #5fbb46;
+      //   border-right: 1px solid #5fbb46;
+      //   @media only screen and (max-width: 992px) {
+      //     padding-right: 48px;
+      //     padding-left: 28px;
+      //     &::before {
+      //       content: "";
+      //       width: 1px;
+      //       height: 100%;
+      //       position: absolute;
+      //       right: 28px;
+      //       background-color: #5fbb46;
+      //     }
+      //   }
+      // }
+      // &:nth-child(2) {
+      //   border-bottom: 1px solid #5fbb46;
+      //   border-right: 1px solid #5fbb46;
+      //   width: 33.33%;
+      //   @media only screen and (max-width: 992px) {
+      //     padding-left: 48px;
+      //     padding-right: 28px;
+      //     &::before {
+      //       content: "";
+      //       width: 1px;
+      //       height: 100%;
+      //       position: absolute;
+      //       left: 28px;
+      //       background-color: #5fbb46;
+      //     }
+      //   }
+      // }
+      // &:nth-child(3) {
+      //   border-bottom: 1px solid #5fbb46;
+      //   width: 33.33%;
+      //   @media only screen and (max-width: 992px) {
+      //     padding-right: 48px;
+      //     padding-left: 28px;
+      //     &::before {
+      //       content: "";
+      //       width: 1px;
+      //       height: 100%;
+      //       position: absolute;
+      //       right: 28px;
+      //       background-color: #5fbb46;
+      //     }
+      //   }
+      // }
+      // &:nth-child(4) {
+      //   border-right: 1px solid #5fbb46;
+      //   width: 50%;
+      //   @media only screen and (max-width: 992px) {
+      //     padding-left: 48px;
+      //     padding-right: 28px;
+      //     &::before {
+      //       content: "";
+      //       width: 1px;
+      //       height: 100%;
+      //       position: absolute;
+      //       left: 28px;
+      //       background-color: #5fbb46;
+      //     }
+      //   }
+      // }
+      // &:nth-child(5) {
+      //   width: 50%;
+      //   @media only screen and (max-width: 992px) {
+      //     padding-right: 48px;
+      //     padding-left: 28px;
+      //     border-bottom: 0px !important;
+      //     &::before {
+      //       content: "";
+      //       width: 1px;
+      //       height: 100%;
+      //       position: absolute;
+      //       right: 28px;
+      //       background-color: #5fbb46;
+      //     }
+      //   }
+      // }
+
+      .card_heading {
+        // font-family: "Bakbak One";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px !important;
+        line-height: 22px;
+        display: inline;
+        text-transform: capitalize;
+        color: white;
+      }
+    }
+  }
+  .next {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid #4f489e;
+    svg path {
+      fill: #4f489e;
+    }
+  }
+  .prev {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid #4f489e;
+    svg path {
+      fill: #4f489e;
+    }
+  }
+}

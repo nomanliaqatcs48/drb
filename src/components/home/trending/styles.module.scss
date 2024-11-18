@@ -1,0 +1,43 @@
+.wrapper {
+  margin: 100px auto;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    background-image: url("../../../assets/events-art.svg");
+    left: 0;
+    top: 400px;
+    z-index: -1;
+    height: 265px;
+    width: 214px;
+    object-fit: contain;
+    object-position: center;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    margin: 50px auto;
+  }
+  .heading {
+    // font-family: "Bakbak One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #333333;
+    margin-bottom: 0;
+    @media only screen and (max-width: 992px) {
+      font-size: 24px;
+      margin-bottom: -15px;
+    }
+    @media only screen and (max-width: 992px) {
+      font-size: 20px;
+      margin-bottom: -35px;
+    }
+
+  }
+}
